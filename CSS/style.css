@@ -1,0 +1,19 @@
+:root{
+    --primaryColor :red;
+    --primaryLite:rgba(255, 255, 255, 0.769);
+}
+
+.head{
+    background-color: var(--primaryColor);
+    color: var(--primaryLite);
+}
+
+/* color,font-style,font-size,height,width,background-color,margin,padding ,text-allign,text-decoration*/
+
+/* dimension */
+/* width height max-width min-width max-height min-height */
+span{
+    width: 600px;
+    background-color: red;
+    display: block;
+}
