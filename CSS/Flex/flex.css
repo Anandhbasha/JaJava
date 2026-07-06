@@ -1,0 +1,25 @@
+.Para{
+    background-color: tomato;
+    color: white;
+    width: 200px;
+    height: 300px;
+}
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100vh;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    align-items: center;
+}
+.para1{
+    /* flex-grow: 2; */
+    /* flex-shrink: 0; */
+    flex-basis: 500px;
+}
