@@ -1,0 +1,118 @@
+/* .container{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "b1 b2 b2 b3 b3"
+    "b1 b4 b5 b5 b6"
+    "b9 b4 b5 b5 b6"
+    "b9 b7 b7 b8 b6";
+    gap: 10px;
+}
+.box1,.box6,.box7{
+    background-color: red;
+}
+.box2,.box8{
+    background-color: steelblue;
+}
+.box3,.box4{
+    background-color: goldenrod;
+}
+.box5,.box9{
+    background-color: white;
+}
+
+.box1{
+    grid-area: b1;
+    border: 5px solid black;
+}
+.box2{
+    grid-area: b2;
+    border:5px solid black;
+}
+.box3{
+    grid-area: b3;
+    border: 5px solid black;
+}
+.box4{
+    grid-area: b4;
+    border: 5px solid black;
+}
+.box5{
+    grid-area: b5;
+    border: 5px solid black;
+}
+.box6{
+    grid-area: b6;
+    border: 5px solid black;
+}
+.box7{
+    grid-area: b7;
+    border: 5px solid black;
+}
+.box8{
+    grid-area: b8;
+    border: 5px solid black;
+}
+.box9{
+    grid-area: b9;
+    border: 5px solid black;
+} */
+
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    /* grid-template-columns: 200px 300px 400px 100px 100px; */
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,23vh);
+    
+}
+
+.box1,.box6,.box8{
+    background-color: red;
+    border: 3px solid black;
+}
+.box2,.box9{
+    background-color: steelblue;
+    border: 3px solid black;
+}
+.box3,.box4{
+    background-color: goldenrod;
+    border: 3px solid black;
+}
+.box5,.box7{
+    background-color: white;
+    border: 3px solid black;
+}
+
+.box1{
+    grid-row: span 2;
+    
+}
+.box2{
+    grid-column: span 2;
+}
+.box3{
+    grid-column: span 2;
+}
+.box4{
+    grid-row:span 2;
+}
+.box5{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.box6{
+    grid-row: span 3;
+}
+.box7{
+    grid-row: span 2;
+    
+}
+.box8{
+    grid-column: span 2;
+}
+.box9{
+    /* grid-column: span 2; */
+}
