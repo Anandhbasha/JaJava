@@ -1,0 +1,87 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+    "b1 b2 b2 b3"
+    "b1 b4 b5 b5"
+    "b6 b7 b7 b10"
+    "b8 b8 b9 b10"
+    "b11 b12 b12 b13"
+    "b11 b14 b15 b15"
+    "b16 b17 b17 b20"
+    "b18 b18 b19 b20";
+    gap: 10px;
+}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15,.box16,.box17,.box18,.box19,.box20{
+    background-color: white;
+    border: 5px solid black;
+    text-align:center;
+    padding:60px;
+
+}
+.box1{
+    grid-area: b1;
+}
+.box2{
+    grid-area: b2;
+}
+.box3{
+    grid-area: b3;
+}
+.box4{
+    grid-area: b4;
+}
+.box5{
+    grid-area: b5;
+}
+.box6{
+    grid-area: b6;
+}
+.box7{
+    grid-area: b7;
+}
+.box8{
+    grid-area: b8;
+}
+.box9{
+    grid-area: b9;
+}
+.box10{
+    grid-area: b10;
+    padding:120px;
+}
+.box11{
+    grid-area: b11;
+    padding:120px;
+}
+.box12{
+    grid-area: b12;
+}
+.box13{
+    grid-area: b13;
+}
+.box14{
+    grid-area: b14;
+}
+.box15{
+    grid-area: b15;
+}
+.box15{
+    grid-area: b15;
+}
+.box16{
+    grid-area: b16;
+}
+.box17{
+    grid-area: b17;
+}
+.box18{
+    grid-area: b18;
+}
+.box19{
+    grid-area: b19;
+}
+.box20{
+    grid-area: b20;
+    padding:150px;
+}

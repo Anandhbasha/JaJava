@@ -1,19 +1,36 @@
-:root{
-    --primaryColor :red;
-    --primaryLite:rgba(255, 255, 255, 0.769);
+.box{
+    width: 100px;
+    height: 200px;
+    background-color: palegreen;
+    animation: bgchange 4s infinite;
 }
 
-.head{
-    background-color: var(--primaryColor);
-    color: var(--primaryLite);
+/* @keyframes bgchange {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: black;
+    }
+    50%{
+        background-color: palevioletred;
+    }
+    100%{
+        background-color: blueviolet;
+    }
+} */
+
+@keyframes bgchange {
+    from{
+        transform:translateX(0px);
+    }
+    to{
+        transform: translateX(50px);
+    }
 }
 
-/* color,font-style,font-size,height,width,background-color,margin,padding ,text-allign,text-decoration*/
-
-/* dimension */
-/* width height max-width min-width max-height min-height */
-span{
-    width: 600px;
-    background-color: red;
-    display: block;
+@media (max-width:600px) {
+    .box{
+        display: none;
+    }
 }
