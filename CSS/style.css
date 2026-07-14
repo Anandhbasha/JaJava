@@ -34,3 +34,40 @@
         display: none;
     }
 }
+
+button{
+    cursor: pointer;
+}
+.newbox{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border-radius: 50%;
+}
+/* .triangel{
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(0% 100%,50% 0%,100% 100%);
+    background-color: red;
+} */
+
+/* .triangel{
+    background-color: palegreen;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(0% 35%,50% 0%,100% 35%,75% 100%,25% 100%);
+} */
+
+/* .triangel{
+    background-color: palegreen;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+    clip-path: polygon(0% 100%,0% 0%,100% 100%);
+} */
+ .triangel{
+    width: 100px;
+    height: 100px;
+    /* overflow: hidden; */
+    overflow: scroll;
+ }
