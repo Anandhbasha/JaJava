@@ -306,31 +306,182 @@
 //     case 3:
 //         //code
 //     default:
-//         //code
+// //         //code
+// // }
+
+
+
+// we cannot use any operator in switch cases
+// let today = "Wednesday"
+
+// switch(today){
+//     case "Monday":
+//         console.log("Today is Monday");
+//         break
+//     case "Tuesday":
+//         console.log("Today is Tuesday");
+//         break
+//     case "Wednesday":
+//         console.log("Today is Wednesday");
+//         break
+//     case "Thursday":
+//         console.log("Today is Thursday");
+//         break
+//     case "Friday":
+//         console.log("Today is Friday");
+//         break
+//     case "Saturday":
+//         console.log("Today is Saturday");
+//         break
+//     default:
+//         console.log("Today is Sunday");        
 // }
 
 
-let today = "Wednesday"
+// loops
+// while
+// condition must be failure to stop loop
 
-switch(today){
-    case "Monday":
-        console.log("Today is Monday");
-        break
-    case "Tuesday":
-        console.log("Today is Tuesday");
-        break
-    case "Wednesday":
-        console.log("Today is Wednesday");
-        break
-    case "Thursday":
-        console.log("Today is Thursday");
-        break
-    case "Friday":
-        console.log("Today is Friday");
-        break
-    case "Saturday":
-        console.log("Today is Saturday");
-        break
-    default:
-        console.log("Today is Sunday");        
+// while(condition){
+// code
+// // }
+
+// let a =1
+// while(a<6){ //6<6
+//     console.log("Hello Welcome"); 
+//     a++  //6
+// }
+
+// string iteration
+let name = "Suriya"
+// name[0] = S
+// name[1] = u
+// name[2] = r
+// name[3] = i
+// // name[4] = y
+// // name[5] = a
+// console.log(name[0]);
+// console.log(name[1]);
+// console.log(name[2]);
+// console.log(name[3]);
+// console.log(name[4]);
+// console.log(name[5]);
+
+// // array iteration
+let arr = [10,20,30,40,50]
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+// console.log(arr[3]);
+// console.log(arr[4]);
+
+// let x=0
+// while(x<6){ //1<6
+//     console.log(name[x]); //name[x]
+//     x++    //x=1
+// }
+// let x=0
+// while(x<6){ //1<6
+//     console.log(arr[x]); //name[x]
+//     x++    //x=1
+// }
+
+// console.log("Anandh");
+// console.log("Anandh");
+// console.log("Anandh");
+// // console.log("Anandh");
+// // console.log("Anandh");
+// let a =1
+// while(a<=5){ //6<=5
+//     console.log("Anandh"); //5
+//     a++ //a=6
+// }
+// do while
+// exist condition
+// do{
+//     console.log("Do while");
+    
+// }while(10>15)
+// let chance = 3
+// let pass = "@nand#akumar123"
+// let enterPassword ="@nand#akumar121"
+// do{
+//     if(pass==enterPassword){
+//         console.log("Mobile is unlocked");
+        
+//     }
+//     else{
+//         console.log("Attempt" + chance + "is Failed");
+        
+//     }
+//     chance++
+// }while(chance<=3)
+// for
+// for(let x =0;x<5;x++){
+//     console.log(x);    
+// }
+
+
+// let arr1 = [10,20,30,40,50]
+
+// for(let x =4;x>=0;x--){ //4-1 =3
+//     console.log(x);    
+// }
+// 50
+// 40
+// 30
+// 20
+// 10
+
+// length of the array-> no of elements in array
+// 5
+
+let arr1 = [10,20,30,40,50]
+let len = arr1.length
+console.log(len);
+
+for(let i=0;i<arr1.length;i++){ //5-> 1<5
+    console.log(arr1[i]);  //arr[0]->10    arr[1]->20 
 }
+
+
+// name reverse
+let names = "Pranesh"
+
+let a =names.length-1
+while(a>=0){
+    console.log(names[a]);
+    a--
+    
+}
+
+//find the total of array
+let array = [55,77,88,99,66]
+// let sum;
+
+// for(let i=0;i<array.length;i++){
+//     sum=0
+//     sum+=array[i]  //0+88
+// }
+// // console.log(sum);
+// let largest = array[0]
+// for(let x=1;x<array.length;x++){
+//     if(array[x]>largest){ //array[1] = 99 >>66
+//         largest = array[x]
+//     }
+// }
+
+// console.log(largest);
+
+
+// types of for
+// for of
+for(let x of array){ //x-array[0]
+    console.log(x);    
+}
+// for in
+for(let x in array){ //x-array[0]
+    console.log(array[x]);    
+}
+// forEach
+array.forEach((x)=>console.log(x))
