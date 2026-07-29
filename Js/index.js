@@ -456,7 +456,7 @@ while(a>=0){
 }
 
 //find the total of array
-let array = [55,77,88,99,66]
+// let array = [55,77,88,99,66]
 // let sum;
 
 // for(let i=0;i<array.length;i++){
@@ -474,14 +474,88 @@ let array = [55,77,88,99,66]
 // console.log(largest);
 
 
-// types of for
-// for of
-for(let x of array){ //x-array[0]
-    console.log(x);    
-}
-// for in
-for(let x in array){ //x-array[0]
-    console.log(array[x]);    
-}
-// forEach
-array.forEach((x)=>console.log(x))
+// // types of for
+// // for of
+// for(let x of array){ //x-array[0]
+//     console.log(x);    
+// }
+// // for in
+// for(let x in array){ //x-array[0]
+//     console.log(array[x]);    
+// }
+// // forEach
+// array.forEach((x)=>console.log(x))
+
+// array methods
+// map
+let array = [55,77,88,99,66]
+array.map((x)=>console.log(x))
+// 55
+// 77
+// 88
+// 99
+// 66
+// reduce
+let total = array.reduce((x,y)=>x+y)
+// x=0,y=55->55
+// x=55 y=77->132
+// x=132 y = 88 ->220
+// x=220 y =99->319
+// x=319 y =66 ->385
+// total = 385
+console.log(total);
+
+// filter
+let even = array.filter((x)=>x%2==0)
+let odd = array.filter((x)=>x%2!=0)
+console.log("Even Numbers are:",even);
+console.log("Odd Numbers are:",odd);
+
+// push
+even.push(24)
+console.log(even);
+
+// pop
+even.pop()
+console.log(even);
+
+// shift
+odd.shift()
+console.log(odd);
+
+// unshift
+odd.unshift(81)
+console.log(odd);
+
+// find
+let finds = array.find((x)=>x==53)
+console.log(finds);
+
+// indexOf
+console.log(array.indexOf(53));
+
+// includes
+console.log(array.includes(53));
+
+// slice
+console.log(array.slice(0,3));
+// slice(startingPoint,next to end point)
+
+// splice
+// remove and replace
+// array[2] = 37
+// console.log(array);
+array.splice(2,1,47)
+console.log(array);
+// split
+let text = "Hello-welcome"
+let newtext = text.split("-")
+console.log(newtext);
+
+// join
+let news = newtext.join(" ")
+console.log(news);
+
+// sort
+console.log(array.sort());
+
