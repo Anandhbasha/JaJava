@@ -1,0 +1,337 @@
+# While Loop - 5 Tasks
+
+Task 1 - Password Validation
+
+User correct password enter panna varaikkum repeatedly ask pannanum.
+
+Example:
+
+
+Enter Password:
+1234
+Wrong Password
+
+Enter Password:
+admin@123
+Login Success
+
+
+
+Task 2 - ATM Withdrawal
+
+Account balance = 10000
+
+User amount enter pannuvanga.
+
+* Balance iruntha withdraw
+* Balance update
+* 0 enter panna exit
+
+
+Task 3 - Guess the Number
+
+Secret Number = 25
+
+User number guess pannuvanga.
+
+Display
+
+* Too High
+* Too Low
+* Correct
+
+
+Task 4 - Multiples of 7
+
+Using while loop
+
+Print first 20 multiples of 7.
+
+Output
+
+
+7
+14
+21
+...
+140
+
+
+
+Task 5 - Reverse Number
+
+Input
+
+
+987654
+
+
+Output
+
+
+456789
+
+
+
+# Do While Loop - 5 Tasks
+
+Task 1 - Food Ordering
+
+Menu
+
+
+1 Pizza
+2 Burger
+3 Juice
+4 Exit
+
+
+User Exit select panna varaikkum menu repeat aaganum.
+
+
+Task 2 - Login System
+
+Maximum 3 attempts.
+
+Correct username/password vandha Login Success.
+
+3 attempts mudinja
+
+
+Account Blocked
+
+
+
+Task 3 - Calculator
+
+Menu
+
+
+1 Add
+2 Sub
+3 Mul
+4 Div
+5 Exit
+
+
+Exit select panna varaikkum calculator continue aaganum.
+
+
+Task 4 - Positive Number Counter
+
+User repeatedly numbers enter pannuvanga.
+
+* Positive count
+* Negative count
+
+0 enter panna stop.
+
+
+Task 5 - Movie Ticket Booking
+
+Ticket count repeatedly ask.
+
+Available Seats = 20
+
+Seat full aana
+
+
+House Full
+
+
+
+# For Loop - 5 Tasks
+
+Task 1 - Prime Numbers
+
+Print 1 to 100 prime numbers.
+
+
+Task 2 - Factorial Table
+
+Print factorial from 1 to 10.
+
+Example
+
+
+1 = 1
+2 = 2
+3 = 6
+...
+
+
+
+Task 3 - Pattern
+
+
+*
+**
+***
+****
+*****
+
+
+
+Task 4 - Multiplication Tables
+
+Print tables from 2 to 10.
+
+
+2 x 1 = 2
+...
+10 x 10 =100
+
+
+
+Task 5 - Student Marks
+
+Marks array
+
+
+[90,45,78,99,35,88,67]
+
+
+Find
+
+* Total
+* Average
+* Highest
+* Lowest
+
+using for loop only.
+
+
+# for...of - 3 Tasks
+
+Task 1 - Fruits
+
+Array
+
+
+["Apple","Orange","Mango","Banana","Kiwi"]
+
+
+Print every fruit in uppercase.
+
+
+Task 2 - Employee Salary
+
+Array
+
+
+[25000,18000,45000,52000]
+
+
+Print only salaries greater than 30000.
+
+
+Task 3 - Student Names
+
+Array
+
+
+["Ravi","Kumar","John","Arun","Anu"]
+
+
+Print names whose length is greater than 4.
+
+
+# for...in - 3 Tasks
+
+Task 1 - Student Object
+
+
+{
+ name:"Rahul",
+ age:20,
+ city:"Coimbatore",
+ course:"Java"
+}
+
+
+Print
+
+
+name : Rahul
+age : 20
+...
+
+
+
+Task 2 - Product Object
+
+
+{
+ Laptop:65000,
+ Mouse:800,
+ Keyboard:1500,
+ Monitor:12000
+}
+
+
+Print only products whose price is greater than 5000.
+
+
+Task 3 - Marks Object
+
+
+{
+ Tamil:85,
+ English:90,
+ Maths:99,
+ Science:88,
+ Social:91
+}
+
+
+Find the subject with the highest mark.
+
+
+# forEach() - 3 Tasks
+
+Task 1 - Shopping Cart
+
+Array
+
+
+[
+{name:"Pen",price:20},
+{name:"Book",price:100},
+{name:"Bag",price:800}
+]
+
+
+Calculate total bill using `forEach()`.
+
+
+Task 2 - Employee Bonus
+
+
+[
+{name:"Ravi",salary:30000},
+{name:"John",salary:50000},
+{name:"Arun",salary:25000}
+]
+
+
+Print employee name with 10% bonus amount.
+
+
+Task 3 - Student Result
+
+
+[
+{name:"A",mark:45},
+{name:"B",mark:80},
+{name:"C",mark:28},
+{name:"D",mark:91}
+]
+
+
+Print
+
+* Pass Students (mark >=35)
+* Fail Students (mark <35)
+* Total Pass Count
+* Total Fail Count
+
