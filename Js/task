@@ -335,3 +335,319 @@ Print
 * Total Pass Count
 * Total Fail Count
 
+
+
+
+06.08.26
+
+Task 1 - Users Information
+
+API
+
+
+https://jsonplaceholder.typicode.com/users
+
+
+ Task
+
+Print:
+
+* Name
+* Username
+* Company Name
+* City
+* Geo Location (lat, lng)
+
+
+
+# Task 2 - Products
+
+ API
+
+
+https://fakestoreapi.com/products
+
+
+ Task
+
+Print:
+
+* Product Title
+* Price
+* Category
+* Rating Rate
+* Rating Count
+
+
+
+# Task 3 - Posts
+
+ API
+
+
+https://jsonplaceholder.typicode.com/posts
+
+
+ Task
+
+* Print only posts whose `userId == 5`
+* Show:
+
+  * Post ID
+  * Title
+  * Body
+
+
+
+# Task 4 - Todos
+
+ API
+
+
+https://jsonplaceholder.typicode.com/todos
+
+
+ Task
+
+Print only:
+
+* Completed Tasks
+* User ID
+* Title
+* Count how many completed tasks exist.
+
+
+
+# Task 5 - Comments
+
+ API
+
+
+https://jsonplaceholder.typicode.com/comments
+
+
+ Task
+
+Print comments where
+
+
+postId = 10
+
+
+Display:
+
+* Name
+* Email
+* Comment
+
+
+
+# Task 6 - Countries
+
+API
+
+https://restcountries.com/v3.1/all
+
+Task
+
+Print:
+
+* Country Name
+* Official Name
+* Capital
+* Population
+* Region
+* Sub Region
+* Timezones
+* Currencies
+* Languages
+
+> **Challenge:** Currency and Languages are objects. Students should use `Object.keys()` / `Object.values()` to extract the values.
+
+
+
+# Task 7 - Universities
+
+ API
+
+
+http://universities.hipolabs.com/search?country=India
+
+
+ Task
+
+Print:
+
+* University Name
+* State / Province
+* Domain
+* Website
+
+
+
+# Task 8 - Recipes
+
+ API
+
+
+https://dummyjson.com/recipes
+
+
+ Task
+
+Print:
+
+* Recipe Name
+* Cuisine
+* Difficulty
+* Rating
+* Ingredients Count
+* Cooking Time
+
+
+
+# Task 9 - Quotes
+
+ API
+
+
+https://dummyjson.com/quotes
+
+
+ Task
+
+Print:
+
+* Quote
+* Author
+
+Then print:
+
+
+Total Quotes = ___
+
+
+
+
+# Task 10 - Rick and Morty Characters 
+ API
+
+
+https://rickandmortyapi.com/api/character
+
+
+ Task
+
+Print:
+
+* Character Name
+* Status
+* Species
+* Gender
+* Origin Name
+* Current Location
+
+
+
+Bonus Challenges
+
+ 1.
+
+Countries API la
+
+Print only countries whose
+
+
+Population > 100000000
+
+
+
+
+ 2.
+
+Products API la
+
+Print only
+
+
+Price > 100
+
+
+
+
+ 3.
+
+Users API la
+
+Print only users living in
+
+
+South Christy
+
+
+
+
+ 4.
+
+Recipes API la
+
+Print only recipes whose
+
+
+Rating >= 4.5
+
+
+
+
+ 5.
+
+Countries API la
+
+Print only Asian countries.
+
+
+
+ 6.
+
+Countries API la
+
+Find the country with the **highest population**.
+
+
+
+ 7.
+
+Products API la
+
+Find the **costliest product**.
+
+
+
+ 8.
+
+Todos API la
+
+Print
+
+
+Completed Count
+Pending Count
+
+
+
+
+ 9.
+
+Countries API la
+
+Print countries that have **more than one timezone**.
+
+
+
+ 10.
+
+Universities API la
+
+Print universities whose domain ends with
+
+.ac.in
