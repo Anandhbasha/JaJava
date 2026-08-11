@@ -906,19 +906,112 @@
 // }
 // async function fetchProducts(){
 
+// // }
+// const fetchProducts = async()=>{
+//   try{
+//     const res =await fetch("https://fakestoreapi.com/products")
+//     if(res.ok){
+//       const data =await res.json()
+//       console.log(data);
+//     }else{
+//       throw new Error("Error in fetching data")
+//     }
+//   }catch(error){
+//     console.log(error);
+//    }
 // }
-const fetchProducts = async()=>{
-  try{
-    const res =await fetch("https://fakestoreapi.com/products")
-    if(res.ok){
-      const data =await res.json()
-      console.log(data);
-    }else{
-      throw new Error("Error in fetching data")
-    }
-  }catch(error){
-    console.log(error);
-   }
-}
-fetchProducts()
+// fetchProducts()
 // fetch
+
+
+
+// const fetchCountry = new Promise((resolve, reject) => {
+
+//     fetch(
+//   'https://api.restcountries.com/countries/v5?q=canada',
+//   { headers: { 'Authorization': 'Bearer rc_live_3c8e94aa0fa447fab17e08a75a848951' } }
+// ).then((res) => {
+
+//         if (!res.ok) {
+//             reject("Unable to get");
+//             return;
+//         }
+
+//         return res.json();
+//     })
+//     .then((data) => {
+//         if (data) {
+//             resolve(data);
+//         }
+//     })
+//     .catch((err) => {
+//         reject(err);
+//     });
+
+// });
+
+// fetchCountry
+//     .then((response) => {
+//         console.log(response);
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     });
+
+
+// DOM -> Document Object Module
+// Events
+// onclick
+// let title = document.getElementById("text")
+// getElemntById
+// getElemntByClassName
+// let title = document.getElementsByClassName("text")[0]
+// getElemntByTagName
+// let title = document.getElementsByTagName("h1")[0]
+// querySelector
+// let title = document.querySelector("#text")
+// let title = document.querySelector(".text")
+// querySelectorAll
+// let h1 = document.querySelectorAll(".text")
+
+
+// const greet =()=>{
+//     // innerHTML
+//     // innerText
+//     // textContent
+//     // h1.innerHTML = "Hello Welcome"  
+//     h1.forEach((item)=>(
+//         item.innerHTML = "Hello Welcome",
+//         item.style.backgroundColor = "red"
+//     )) 
+// }
+// onchange
+// let h1 = document.getElementById("text")
+// const show =(e)=>{
+//     h1.innerText= e.target.value
+// }
+// onsubmit
+
+// create Elements
+let button = document.createElement("button")
+button.textContent = "Save"
+document.body.append(button)
+
+button.addEventListener("click",()=>{
+    button.innerHTML = "Saved",
+    button.style.backgroundColor="black",
+    button.style.color = "White"
+})
+
+let div = document.createElement("div")
+document.body.append(div)
+
+div.style.backgroundColor="purple"
+div.style.color="white"
+let h1 = document.createElement("h1")
+h1.innerHTML = "Hello Welcome"
+div.appendChild(h1)
+
+
+// th,thead,tbody,tr,td
+// document.createElement()

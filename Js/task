@@ -599,7 +599,12 @@ Rating >= 4.5
 
 
 
- 5.
+ 5.fetch(
+  'https://api.restcountries.com/countries/v5?q=canada',
+  { headers: { 'Authorization': 'Bearer rc_live_3c8e94aa0fa447fab17e08a75a848951' } }
+)
+  .then(function (response) { return response.json(); })
+  .then(function (data) { console.log(data); });
 
 Countries API la
 
@@ -651,3 +656,6 @@ Universities API la
 Print universities whose domain ends with
 
 .ac.in
+
+
+rc_live_3c8e94aa0fa447fab17e08a75a848951
