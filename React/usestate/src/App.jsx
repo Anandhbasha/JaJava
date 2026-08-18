@@ -15,6 +15,7 @@ const App = () => {
         <option>50</option>
       </select>
       <input type='text' placeholder='search here'></input>
+      {/* need to show the table as a component use filter and dropdown selction */}
     </div>
   )
 }
