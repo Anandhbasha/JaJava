@@ -1,8 +1,11 @@
 import React from 'react'
+import Card from '../../Components/Card/Card'
 
 const Electronics = () => {
   return (
-    <div>Electronics</div>
+    <div className='Electronics'>
+      <Card/>
+    </div>
   )
 }
 
