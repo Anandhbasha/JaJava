@@ -1,38 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Card from '../../Components/Card/Card'
 import "./Mens.css"
+import { PassingValue } from '../../App'
 
 const Mens = () => {
-  const[products,setProducts] = useState([])
-  
-  
-  
-    useEffect(()=>{
-      const fetchProduct = async()=>{
-        try{
-          const res = await fetch("https://fakestoreapi.com/products")
-          if(res.ok){
-              setProducts(await res.json())
-          }
-          else{
-            throw Error("Unable to connect API ");
-            
-          }
-        }
-        catch(err){
-          console.log(err);
-          
-        }
-      }
-      fetchProduct()
-    },[])
-    console.log(products);
-    
+  const {products} = useContext(PassingValue)
+  const mensProduct = products.filter((item)=>item.category=="men's clothing")
+
   return (
     <div className='Mens'>
-      {products.filter((item)=>
-        item.category=="men's clothing"
-      ).map((x)=>(
+      {mensProduct.map((x)=>(
         <Card {...x}/>
       ))}
     </div>

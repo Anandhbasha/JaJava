@@ -22,7 +22,7 @@ import Card from "./Card"
 // rafce
 
 const App = () => {
-const products = [
+  const products = [
   {
     "id": 1,
     "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -266,6 +266,7 @@ const products = [
 ]
   return (
     <div className="App" style={{display:"flex",flexWrap:"wrap",gap:"30px"}}>
+      
       {products.map((x)=>(
          <Card {...x}/>
       ))}

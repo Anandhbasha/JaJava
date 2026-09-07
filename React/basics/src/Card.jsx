@@ -13,7 +13,7 @@ const Card = ({title,price,description,image}) => {
             <p>{description}</p>
         </div>
         <div className='cardBtm'>
-            <button>Add To Cart</button>
+            <button >Add To Cart</button>
         </div>
     </div>
   )

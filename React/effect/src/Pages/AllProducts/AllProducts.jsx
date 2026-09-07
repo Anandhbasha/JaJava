@@ -1,30 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Card from '../../Components/Card/Card'
 import "./AllProducts.css"
+import { PassingValue } from '../../App'
 
-const AllProducts = () => {
-  const[products,setProducts] = useState([])
-  useEffect(()=>{
-    const fetchProduct = async()=>{
-      try{
-        const res = await fetch("https://fakestoreapi.com/products")
-        if(res.ok){
-            setProducts(await res.json())
-        }
-        else{
-          throw Error("Unable to connect API ");
-          
-        }
-      }
-      catch(err){
-        console.log(err);
-        
-      }
-    }
-    fetchProduct()
-  },[])
-  console.log(products);
-  
+const AllProducts = () => { 
+  const {products} = useContext(PassingValue)
   return (
     <div className='AllProducts'>
       {products.map((item)=>(

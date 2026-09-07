@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Card.css"
+import { PassingValue } from '../../App'
 
 const Card = ({title,price,image,id,description}) => {
+    const {count,setCount} = useContext(PassingValue) 
   return (
     <div className='Card'>
         <div className='cardTop'>
@@ -13,7 +15,7 @@ const Card = ({title,price,image,id,description}) => {
             <p>{description}</p>
         </div>
         <div className='cardBtm'>
-            <button>Add to Cart</button>
+            <button onClick={()=>setCount((prev)=>++prev)}>Add to Cart</button>
         </div>
     </div>
   )

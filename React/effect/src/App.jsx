@@ -19,7 +19,7 @@
 
 // npm i react-router-dom
 
-import React from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AllProducts from './Pages/AllProducts/AllProducts'
@@ -27,20 +27,49 @@ import Mens from './Pages/Mens/Mens'
 import Jewellery from './Pages/Jewellery/Jewellery'
 import Electronics from './Pages/Electronics/Electronics'
 import Womens from './Pages/Womens/Womens'
+import axios from 'axios'
+
+export const PassingValue = createContext()
+
+
 
 const App = () => {
+  const [count,setCount] = useState(0)
+  const[products,setProducts] = useState([])
+  useEffect(()=>{
+    const fetchProduct = async()=>{
+      try{
+        const res = await axios.get("https://fakestoreapi.com/products")
+        if(res){
+            setProducts(await res.data)
+        }
+        else{
+          throw Error("Unable to connect API ");
+          
+        }
+      }
+      catch(err){
+        console.log(err);
+        
+      }
+    }
+    fetchProduct()
+  },[])
+  console.log(products);
   return (
     <BrowserRouter>
-      <div className='App'>
-        <Navbar/>
-      </div>
-      <Routes>
-        <Route path='/' element={<AllProducts/>}/>
-        <Route path='/mens' element={<Mens/>}/>
-        <Route path='/jewles' element={<Jewellery/>}/>
-        <Route path='/electro' element={<Electronics/>}/>
-        <Route path='/womens' element={<Womens/>}/>
-      </Routes>
+      <PassingValue.Provider value={{products,count,setCount}}>
+          <div className='App' style={{marginBottom:"10vh"}}>
+            <Navbar/>
+          </div>
+          <Routes>
+            <Route path='/' element={<AllProducts/>}/>
+            <Route path='/mens' element={<Mens/>}/>
+            <Route path='/jewles' element={<Jewellery/>}/>
+            <Route path='/electro' element={<Electronics/>}/>
+            <Route path='/womens' element={<Womens/>}/>
+          </Routes>
+      </PassingValue.Provider>
     </BrowserRouter>
   )
 }
