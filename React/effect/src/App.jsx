@@ -28,6 +28,7 @@ import Jewellery from './Pages/Jewellery/Jewellery'
 import Electronics from './Pages/Electronics/Electronics'
 import Womens from './Pages/Womens/Womens'
 import axios from 'axios'
+import CartSidebar from './Components/CartSidebar/CartSidebar'
 
 export const PassingValue = createContext()
 
@@ -61,7 +62,11 @@ const App = () => {
       <PassingValue.Provider value={{products,count,setCount}}>
           <div className='App' style={{marginBottom:"10vh"}}>
             <Navbar/>
+            <div className='sidebar' style={{position:"fixed",top:"8vh",right:"0",height:"90vh",backgroundColor:"white",padding:"25px"}}>
+              <CartSidebar/>
+            </div>
           </div>
+
           <Routes>
             <Route path='/' element={<AllProducts/>}/>
             <Route path='/mens' element={<Mens/>}/>
