@@ -4,7 +4,7 @@ import { loginStudent, registerStudent, verifyToken } from "../Controller/authCo
 
 const router = express.Router()
 
-router.get("/",verifyToken,readStudents)
+router.get("/",readStudents)
 router.post("/",addStudent)
 router.put("/edit/:studentEmail",editStudent)
 router.delete("/del/:studentEmail",deleteStudent)

@@ -5,7 +5,8 @@ const fullStack = mongoose.Schema({
     studentAge:{type:Number,require:true},
     studentCourse:{type:String,require:true},
     courseDuration:{type:String,require:true},
-    studentEmail:{type:String,require:true}
+    studentEmail:{type:String,require:true},
+    studentImage:{type:String,require:true},
     
 })
 
