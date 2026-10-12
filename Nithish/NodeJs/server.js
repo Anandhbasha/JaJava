@@ -14,3 +14,12 @@ app.get("/read",(req,res)=>{
 app.listen(PORT,()=>{
     console.log(`http://localhost:${PORT}`);    
 })
+
+
+// Step1: File create with js
+// npm init -y
+// packagejson -> type:module
+//npm i express
+// check dependency in packagejson express is added or not
+// create the server with express
+// get method
