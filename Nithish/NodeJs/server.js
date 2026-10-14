@@ -1,14 +1,13 @@
 import express from "express"
+import { route } from "./Router/router.js"
 // express
 const app = express()
 const PORT = 7083
 // get,post,put,delete ->Rest Api Methods
 
 // every method conatains ->router,controller->req,res
-
-app.get("/read",(req,res)=>{
-    res.send("Node js is working")
-})
+app.use(express.json())
+app.use("/crud",route)
 
 
 app.listen(PORT,()=>{
