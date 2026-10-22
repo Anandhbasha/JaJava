@@ -32,3 +32,33 @@ export const addNewMovie = async(req,res)=>{
         res.status(401).json({message:"unable to add",error:error.message})
     }
 }
+
+export const updateMovie = async(req,res)=>{
+    try {
+        const {actorName,actressName,directorname,realseDate} = req.body
+        const {movieName} = req.params
+        const updateMovieDetail = await movie.findOneAndUpdate({movieName},{$set:{actorName,actressName,directorname,realseDate}})
+        if(!updateMovieDetail){
+            res.status(403).json({message:"unable to Update the movie details"})
+        }else{
+            res.status(201).json({message:"Movie information updated sucessfully"})
+        }
+    } catch (error) {
+        res.status(500).json({message:"Movie not exist"})
+    }
+}
+
+
+export const deleteMovie = async(req,res)=>{
+    try {
+        const {movieName} = req.params
+        const delMovieDetail = await movie.findOneAndDelete({movieName})
+        if(!delMovieDetail){
+            res.status(403).json({message:"unable to delete the movie details"})
+        }else{
+            res.status(201).json({message:"Movie Deleted sucessfully"})
+        }
+    } catch (error) {
+        res.status(500).json({message:"Movie not exist"})
+    }
+}
