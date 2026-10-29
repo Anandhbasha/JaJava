@@ -97,4 +97,13 @@ print(a&b)
 # print(bin(10))
 
 # 0b1010
+
 # 0b0111
+# 1000
+# 0100
+
+print(b>>1)
+
+
+def greet():
+    print("Hello Welcome")
